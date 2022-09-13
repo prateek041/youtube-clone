@@ -5,11 +5,12 @@ import {
     Route
 } from 'react-router-dom';
 import { Box } from '@mui/material';
+import { Navbar, Feed, ChannelDetail, SearchFeed, VideoDetail } from './components'
 
 const app = () => {
     return (
         <Router>
-            <Box sx={{ backgroudColor: '#000' }}>
+            <Box sx={{ backgroundColor: '#000' }}>
                 <Navbar />
                 <Routes>
                     {/* Exact used because react does partial matching, so we use exact to prevent it from happening */}
